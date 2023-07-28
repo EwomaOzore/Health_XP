@@ -1,0 +1,208 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: hidden;
+}
+
+@font-face {
+    font-family: graphik;
+    src: url(./fonts/Graphik/GraphikRegular.otf);
+}
+
+@font-face {
+    font-family: konnect;
+    src: url(./fonts/konnect/KonnectRegular.otf);
+}
+
+.logo {
+    font-family: konnect;
+    padding-right: 5%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3C6AAC;
+}
+
+.heading {
+    text-align: left;
+    padding-left: 30%;
+}
+
+.heading p {
+    font-family: graphik;
+    font-size: 16px;
+    color: #6A6969;
+}
+
+.heading h1 {
+    font-family: graphik;
+    font-size: 30px;
+    color: var(--secondary-40, #3C6AAC);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 20px;
+    padding-left: 5%;
+}
+
+.nav hr {
+    border-style: solid;
+    border-top-style: solid;
+    border-color: #DBDBDB;
+    border-width: 2px;
+    width: 45%;
+}
+
+.nav-item {
+    width: 20px;
+    height: 20px;
+    background-color: #DBDBDB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+}
+
+.nav-item.active {
+    background-color: var(--secondary-40, #3C6AAC);
+}
+
+.form {
+    margin-left: 30%;
+    width: 50%;
+    z-index: 2;
+}
+
+.form input {
+    display: flex;
+    padding-left: 15px;
+    width: 500px;
+    height: 30px;
+    border: 1px solid;
+    border-color: #7D97C0;
+    border-radius: 5px;
+}
+
+.form select {
+    display: flex;
+    width: 520px;
+    height: 30px;
+    border: 1px solid;
+    border-color: #7D97C0;
+    border-radius: 5px;
+}
+
+.form .error {
+    padding-left: -50%;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.btn {
+    padding-top: 20px;
+    padding-left: 65%;
+}
+
+.next {
+    color: white;
+    padding: 10px 70px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: var(--secondary-40, #3C6AAC);
+}
+
+.submit {
+    color: white;
+    padding: 10px 70px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: var(--secondary-40, #3C6AAC);
+}
+
+.ellipse1 {
+    position: absolute;
+    bottom: -180px;
+    left: -30px;
+    width: 550px;
+    height: 550px;
+    border-radius: 550px;
+    background: #94C6EF;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.ellipse2 {
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+    width: 450px;
+    height: 450px;
+    border-radius: 450px;
+    background: #A4CAE9;
+    filter: blur(5px);
+}
+
+.ellipse3 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    background: #BDDCF5;
+    filter: blur(5px);
+}
+
+.parent {
+    display: grid;
+    place-items: center;
+    padding-top: 5%;
+}
+
+.parent h2 {
+    color: #243A5E;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.parent button {
+    color: white;
+    padding: 10px 70px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: var(--secondary-40, #3C6AAC);
+}
+
+.parent a {
+    text-decoration: none;
+}
+
+.password-input {
+    position: relative;
+    width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 170px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.password-toggle img {
+    width: 100%;
+    height: 100%;
+}
